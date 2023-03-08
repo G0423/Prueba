@@ -1992,6 +1992,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1112439205680914543, guid: ebf84e7da0bf9dd40b11e6ffe5c3d15b, type: 3}
+      propertyPath: _locationStrings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1112439205680914543, guid: ebf84e7da0bf9dd40b11e6ffe5c3d15b, type: 3}
+      propertyPath: _locationStrings.Array.data[0]
+      value: 22.151647, -100.976399
+      objectReference: {fileID: 0}
     - target: {fileID: 1112439205680914548, guid: ebf84e7da0bf9dd40b11e6ffe5c3d15b, type: 3}
       propertyPath: _tileProvider
       value: 
@@ -3967,6 +3975,7 @@ GameObject:
   - component: {fileID: 466814210}
   - component: {fileID: 466814209}
   - component: {fileID: 466814208}
+  - component: {fileID: 466814212}
   m_Layer: 5
   m_Name: ButtonG5tips
   m_TagString: Untagged
@@ -4064,9 +4073,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 466814208}
-        m_TargetAssemblyTypeName: NavegacionPantallas, Assembly-CSharp
-        m_MethodName: salirPantalla
+      - m_Target: {fileID: 466814212}
+        m_TargetAssemblyTypeName: codigoDesactivador, Assembly-CSharp
+        m_MethodName: desactivarObj
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4114,6 +4123,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466814206}
   m_CullTransparentMesh: 1
+--- !u!114 &466814212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466814206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6308b11cd399b146874291626af9beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoPorDesactivar: {fileID: 1689397752}
 --- !u!1 &473388511
 GameObject:
   m_ObjectHideFlags: 0
@@ -8695,6 +8717,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799860365}
   m_CullTransparentMesh: 1
+--- !u!1 &800902953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1112439205680914549, guid: ebf84e7da0bf9dd40b11e6ffe5c3d15b, type: 3}
+  m_PrefabInstance: {fileID: 205879975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &800902956 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1112439205680914548, guid: ebf84e7da0bf9dd40b11e6ffe5c3d15b, type: 3}
+  m_PrefabInstance: {fileID: 205879975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800902953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd961b1c9541a4cee99686069ecce852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &800902958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800902953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf32ea2cc0514b569329f6b6b68f9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _map: {fileID: 800902956}
+  _locationStrings:
+  - 
+  _spawnScale: 10
+  _markerPrefab: {fileID: 0}
 --- !u!1 &806147540
 GameObject:
   m_ObjectHideFlags: 0
@@ -12521,6 +12576,7 @@ GameObject:
   - component: {fileID: 1277936678}
   - component: {fileID: 1277936677}
   - component: {fileID: 1277936676}
+  - component: {fileID: 1277936680}
   m_Layer: 5
   m_Name: ButtonVibral
   m_TagString: Untagged
@@ -12618,9 +12674,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1277936676}
-        m_TargetAssemblyTypeName: NavegacionPantallas, Assembly-CSharp
-        m_MethodName: salirPantalla
+      - m_Target: {fileID: 1277936680}
+        m_TargetAssemblyTypeName: codigoDesactivador, Assembly-CSharp
+        m_MethodName: desactivarObj
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12668,6 +12724,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277936674}
   m_CullTransparentMesh: 1
+--- !u!114 &1277936680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277936674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6308b11cd399b146874291626af9beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoPorDesactivar: {fileID: 1689397752}
 --- !u!1001 &1287919894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16814,6 +16883,7 @@ GameObject:
   - component: {fileID: 1737434009}
   - component: {fileID: 1737434008}
   - component: {fileID: 1737434011}
+  - component: {fileID: 1737434012}
   m_Layer: 5
   m_Name: VentanaPXpertune
   m_TagString: Untagged
@@ -16898,9 +16968,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1737434011}
-        m_TargetAssemblyTypeName: NavegacionPantallas, Assembly-CSharp
-        m_MethodName: salirPantalla
+      - m_Target: {fileID: 1737434012}
+        m_TargetAssemblyTypeName: codigoDesactivador, Assembly-CSharp
+        m_MethodName: desactivarObj
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16961,6 +17031,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posNextPantalla: {fileID: 286858408}
+--- !u!114 &1737434012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737434006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6308b11cd399b146874291626af9beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoPorDesactivar: {fileID: 189537630}
 --- !u!1 &1742702347
 GameObject:
   m_ObjectHideFlags: 0

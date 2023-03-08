@@ -205,7 +205,6 @@ GameObject:
   - component: {fileID: 4936519322476758}
   - component: {fileID: 114657051886494624}
   - component: {fileID: 114584515627220354}
-  - component: {fileID: 1917298475233362634}
   m_Layer: 10
   m_Name: Xpertune
   m_TagString: Untagged
@@ -256,20 +255,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 0}
---- !u!114 &1917298475233362634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839187062704024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf32ea2cc0514b569329f6b6b68f9b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _map: {fileID: 0}
-  _locationStrings:
-  - 22.13526457138905, -101.01977141534366
-  _spawnScale: 100
-  _markerPrefab: {fileID: 1839187062704024}
